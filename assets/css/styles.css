@@ -1,0 +1,44 @@
+
+:root{
+  --yellow:#FFD23F;
+  --mint:#2EC4B6;
+  --navy:#1C2541;
+  --pink:#FF7EB9;
+  --cream:#FFF8E7;
+  --bg:#FFFDF8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',system-ui,Arial,sans-serif;color:var(--navy);background:var(--bg)}
+h1,h2,h3{font-family:'Fredoka','Poppins',sans-serif;margin:0 0 .5rem}
+h1{font-size:clamp(2rem,4vw,3rem)}
+h2{font-size:clamp(1.4rem,3vw,2rem)}
+.container{max-width:1080px;margin:0 auto;padding:0 16px}
+.site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.logo{height:48px}
+.hero{background:var(--cream);padding:60px 0 80px;position:relative;overflow:hidden}
+.subheadline{max-width:720px}
+.confetti::before{content:"";position:absolute;inset:0;
+  background:
+   radial-gradient(var(--yellow) 3px,transparent 4px) 0 0/38px 38px,
+   radial-gradient(var(--mint) 3px,transparent 4px) 19px 19px/38px 38px,
+   radial-gradient(var(--pink) 3px,transparent 4px) 9px 28px/38px 38px;
+  opacity:.25;pointer-events:none}
+.about{padding:40px 0;background:#fff}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{background:rgba(46,196,182,.12);color:var(--navy);padding:8px 12px;border-radius:999px;font-weight:600}
+.services{padding:40px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #eee;border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card h3{font-family:'Fredoka',sans-serif}
+.price{font-weight:700;color:var(--mint);font-size:1.1rem;margin:.5rem 0}
+.btn{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700}
+.btn-primary{background:var(--mint);color:#fff}
+.btn-accent{background:var(--yellow);color:#000}
+.card .btn{margin-top:8px}
+.testimonials{padding:40px 0;background:#fff}
+.testimonial{display:flex;gap:12px;align-items:flex-start}
+.avatar{width:48px;height:48px;border-radius:50%;background:var(--mint)}
+.final-cta{padding:40px 0;background:var(--mint);color:#fff;text-align:center}
+.site-footer{padding:16px 0;background:#0f1a33;color:#fff;text-align:center}
+@media (max-width:640px){.header-inner{gap:8px}.logo{height:40px}}

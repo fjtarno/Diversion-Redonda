@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title": "Cumpleaños mágico (1h 30m)",
+      "description": "Juegos dinámicos, pintacaras y globoflexia. Ideal 3–9 años.",
+      "price_from": 80
+    },
+    {
+      "title": "Comunión especial (3h)",
+      "description": "Talleres creativos + minidisco. Equipo responsable y cercano.",
+      "price_from": 200
+    },
+    {
+      "title": "Bodas con peques (4h)",
+      "description": "Animadores cuidando y entreteniendo a los niños mientras los adultos celebran.",
+      "price_from": 250
+    }
+  ]
+}
