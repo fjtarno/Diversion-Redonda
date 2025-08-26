@@ -15,7 +15,7 @@ h2{font-size:clamp(1.4rem,3vw,2rem)}
 .container{max-width:1080px;margin:0 auto;padding:0 16px}
 .site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-.logo {height: clamp(60px, 8vw, 100px);}
+.logo {height: clamp(120px, 8vw, 150px);}
 .hero{background:var(--cream);padding:40px 0 40px;position:relative;overflow:hidden}
 .subheadline{max-width:720px}
 .hero-img{width:100%;max-width:980px;border-radius:20px;margin-top:18px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.08)}
