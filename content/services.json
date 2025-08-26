@@ -1,9 +1,14 @@
 {
   "items": [
     {
-      "title": "Cumpleaños mágico (1h 30m)",
+      "title": "Cumpleaños mágico (2h)",
       "description": "Juegos dinámicos, pintacaras y globoflexia. Ideal 3–9 años.",
       "price_from": 80
+    },
+    {
+      "title": "Cumpleaños personalizado (3h)",
+      "description": "Consulta nuestro catálogo y elige tu propia experiencia.",
+      "price_from": 120
     },
     {
       "title": "Comunión especial (3h)",

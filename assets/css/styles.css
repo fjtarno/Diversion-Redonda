@@ -16,17 +16,17 @@ h2{font-size:clamp(1.4rem,3vw,2rem)}
 .site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
 .logo{height:48px}
-.hero{background:var(--cream);padding:60px 0 80px;position:relative;overflow:hidden}
+.hero{background:var(--cream);padding:40px 0 40px;position:relative;overflow:hidden}
 .subheadline{max-width:720px}
+.hero-img{width:100%;max-width:980px;border-radius:20px;margin-top:18px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.wave{width:100%;display:block;margin-top:24px}
+.flip{transform:scaleY(-1)}
 .confetti::before{content:"";position:absolute;inset:0;
-  background:
-   radial-gradient(var(--yellow) 3px,transparent 4px) 0 0/38px 38px,
-   radial-gradient(var(--mint) 3px,transparent 4px) 19px 19px/38px 38px,
-   radial-gradient(var(--pink) 3px,transparent 4px) 9px 28px/38px 38px;
-  opacity:.25;pointer-events:none}
+  background-image:url('/assets/img/confetti-tile.png');background-size:128px 128px;opacity:.25;pointer-events:none}
 .about{padding:40px 0;background:#fff}
-.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.pill{background:rgba(46,196,182,.12);color:var(--navy);padding:8px 12px;border-radius:999px;font-weight:600}
+.pill-icons{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pill{display:flex;align-items:center;gap:8px;background:rgba(46,196,182,.12);color:var(--navy);padding:8px 12px;border-radius:999px;font-weight:600}
+.pill img{width:20px;height:20px}
 .services{padding:40px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
@@ -36,6 +36,8 @@ h2{font-size:clamp(1.4rem,3vw,2rem)}
 .btn-primary{background:var(--mint);color:#fff}
 .btn-accent{background:var(--yellow);color:#000}
 .card .btn{margin-top:8px}
+.gallery{padding:40px 0;background:#fff}
+.gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
 .testimonials{padding:40px 0;background:#fff}
 .testimonial{display:flex;gap:12px;align-items:flex-start}
 .avatar{width:48px;height:48px;border-radius:50%;background:var(--mint)}
