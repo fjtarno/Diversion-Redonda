@@ -15,12 +15,18 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="/assets/img/logo.png" alt="Diversión Redonda logo" class="logo">
+  <!-- HEADER superpuesto -->
+  <header class="site-header overlay">
+    <div class="container header-inner header-3cols">
+      <a class="btn btn-accent btn-small align-left" href="/catalogo.html">Catálogo de servicios</a>
+
+      <div class="brand center">
+        <img src="/assets/img/logo.png" alt="Diversión Redonda" class="logo-overlay">
       </div>
-      <a id="ctaHeader" class="btn btn-primary" href="#" target="_blank" rel="noopener">Reserva por WhatsApp</a>
+
+      <a id="ctaHeader" class="btn btn-primary btn-small align-right" href="#" target="_blank" rel="noopener">
+        Reserva por WhatsApp
+      </a>
     </div>
   </header>
 
@@ -31,6 +37,7 @@
         <h1 id="headline">Ellos ríen, tú disfrutas.</h1>
         <p id="subheadline" class="subheadline">Animación infantil para que tus celebraciones sean inolvidables.</p>
         <a id="ctaHero" class="btn btn-accent" href="#" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+
         <img src="/assets/img/hero.jpg" alt="Niños saltando y riendo" class="hero-img">
       </div>
       <div class="confetti"></div>
@@ -38,7 +45,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
+    <section class="about compact-top">
       <div class="container">
         <h2>¿Quiénes somos?</h2>
         <p id="aboutText">
@@ -54,11 +61,16 @@
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="services">
+    <!-- SERVICES (CARRUSEL) -->
+    <section class="services compact-bottom">
       <div class="container">
         <h2>Nuestros packs de diversión</h2>
-        <div id="servicesGrid" class="grid"></div>
+
+        <div class="carousel">
+          <button class="nav prev" aria-label="Anterior">‹</button>
+          <div id="packsTrack" class="track"></div>
+          <button class="nav next" aria-label="Siguiente">›</button>
+        </div>
       </div>
       <img src="/assets/img/faldon-wave.svg" alt="" class="wave flip">
     </section>
