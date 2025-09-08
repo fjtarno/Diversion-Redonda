@@ -19,7 +19,7 @@ function money(v){ return new Intl.NumberFormat('es-ES',{style:'currency',curren
   if(sub) sub.textContent = home.subheadline;
   if(about) about.textContent = home.about;
 
-  // PACKS (grid elegante)
+  // PACKS (grid)
   const services = await loadJSON('/content/services.json');
   const grid = document.getElementById('servicesGrid');
   if(grid){
