@@ -14,9 +14,9 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .centered{text-align:center}
 .container{max-width:1080px;margin:0 auto;padding:0 16px}
 
-/* HEADER superpuesto + logo CENTRADO mucho más grande */
+/* HEADER superpuesto + logo centrado MUCHO más grande */
 .site-header.overlay{
-  position:absolute; top:0; left:0; right:0; z-index:20; background:transparent;
+  position:absolute; top:0; left:0; right:0; z-index:30; background:transparent;
 }
 .header-inner{padding:10px 0}
 .header-3cols{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:12px}
@@ -24,9 +24,8 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .align-right{justify-self:end}
 .center{justify-self:center}
 .logo-overlay{
-  height:clamp(160px, 22vw, 300px);        /* DOBLE de tamaño aprox. */
+  height:clamp(180px, 24vw, 320px);   /* más grande (doble aprox.) */
   filter: drop-shadow(0 6px 14px rgba(0,0,0,.14));
-  z-index:21;
 }
 
 /* BOTONES */
@@ -36,11 +35,11 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .btn-accent{background:var(--yellow);color:#000}
 .btn:hover{opacity:.9}
 
-/* HERO */
+/* HERO: más espacio superior para que el logo NO tape el texto */
 .hero{
   background:var(--cream);
-  padding-top: 200px;             /* deja espacio bajo el header más grande */
-  padding-bottom: 18px;           /* MENOS espacio total */
+  padding-top: 240px;              /* << clave para que no se pise con el logo */
+  padding-bottom: 18px;
   position:relative; overflow:hidden
 }
 .subheadline{max-width:780px;margin: 0 auto}
@@ -59,7 +58,7 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .confetti::before{content:"";position:absolute;inset:0;
   background-image:url('/assets/img/confetti-tile.png');background-size:128px 128px;opacity:.20;pointer-events:none}
 
-/* ABOUT – menos espacio respecto al hero */
+/* ABOUT y separaciones más compactas */
 .about{padding:24px 0;background:#fff}
 .compact-top{margin-top:-6px}
 
@@ -68,7 +67,7 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .pill{display:flex;align-items:center;gap:8px;background:rgba(46,196,182,.12);color:var(--navy);padding:8px 12px;border-radius:999px;font-weight:600}
 .pill img{width:20px;height:20px}
 
-/* PACKS – GRID elegante (NO carrusel) y menos espacio con galería */
+/* PACKS – GRID elegante (NO carrusel) y poco espacio con galería */
 .services{padding:28px 0 12px}
 .tight-between{margin-bottom:-4px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
@@ -76,11 +75,11 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .card h3{font-family:'Fredoka',sans-serif}
 .price{font-weight:700;color:var(--mint);font-size:1.1rem;margin:.5rem 0}
 
-/* GALERÍA – menos espacio arriba */
+/* GALERÍA */
 .gallery{padding:16px 0;background:#fff}
 .gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
 
-/* TESTIMONIOS – estilo “pantallazo de Instagram” (2 tarjetas) */
+/* TESTIMONIOS – “pantallazo de Instagram” (solo 2) */
 .testimonials{padding:26px 0;background:#fff}
 .insta-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px}
 .insta-card{
@@ -102,10 +101,11 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 
 /* Responsive */
 @media (max-width:840px){
-  .logo-overlay{height:clamp(140px, 26vw, 240px)}
+  .logo-overlay{height:clamp(160px, 26vw, 260px)}
+  .hero{padding-top: 200px}
 }
 @media (max-width:640px){
-  .btn-small{display:none}          /* oculta botones laterales en móvil */
-  .hero{padding-top: 160px}
-  .logo-overlay{height:clamp(120px, 28vw, 220px)}
+  .btn-small{display:none}
+  .logo-overlay{height:clamp(130px, 28vw, 220px)}
+  .hero{padding-top: 170px}
 }
