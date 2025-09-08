@@ -15,12 +15,13 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <!-- HEADER superpuesto -->
+  <!-- Cabecera superpuesta con logo centrado y botones laterales -->
   <header class="site-header overlay">
     <div class="container header-inner header-3cols">
       <a class="btn btn-accent btn-small align-left" href="/catalogo.html">Catálogo de servicios</a>
 
       <div class="brand center">
+        <!-- IMPORTANTE: usa /assets/img/logo.png con fondo TRANSPARENTE -->
         <img src="/assets/img/logo.png" alt="Diversión Redonda" class="logo-overlay">
       </div>
 
@@ -34,17 +35,21 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
-        <h1 id="headline">Ellos ríen, tú disfrutas.</h1>
-        <p id="subheadline" class="subheadline">Animación infantil para que tus celebraciones sean inolvidables.</p>
-        <a id="ctaHero" class="btn btn-accent" href="#" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        <h1 id="headline" class="centered">Ellos ríen, tú disfrutas.</h1>
+        <p id="subheadline" class="subheadline centered">Animación infantil para que tus celebraciones sean inolvidables.</p>
 
         <img src="/assets/img/hero.jpg" alt="Niños saltando y riendo" class="hero-img">
+
+        <!-- Botón centrado y parpadeante debajo de la foto -->
+        <a id="ctaHero" class="btn btn-primary btn-bling centered" href="#" target="_blank" rel="noopener">
+          Hablar por WhatsApp
+        </a>
       </div>
       <div class="confetti"></div>
       <img src="/assets/img/faldon-wave.svg" alt="" class="wave">
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT (menos espacio con respecto al hero) -->
     <section class="about compact-top">
       <div class="container">
         <h2>¿Quiénes somos?</h2>
@@ -61,21 +66,16 @@
       </div>
     </section>
 
-    <!-- SERVICES (CARRUSEL) -->
-    <section class="services compact-bottom">
+    <!-- SERVICES (volver a grid elegante) -->
+    <section class="services tight-between">
       <div class="container">
         <h2>Nuestros packs de diversión</h2>
-
-        <div class="carousel">
-          <button class="nav prev" aria-label="Anterior">‹</button>
-          <div id="packsTrack" class="track"></div>
-          <button class="nav next" aria-label="Siguiente">›</button>
-        </div>
+        <div id="servicesGrid" class="grid"></div>
       </div>
       <img src="/assets/img/faldon-wave.svg" alt="" class="wave flip">
     </section>
 
-    <!-- GALLERY -->
+    <!-- GALLERY (menos espacio blanco antes) -->
     <section class="gallery">
       <div class="container">
         <h2>Así se lo pasan</h2>
@@ -87,15 +87,15 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- TESTIMONIOS (estilo pantallazo Instagram) -->
     <section class="testimonials">
       <div class="container">
         <h2>Opiniones</h2>
-        <div id="testimonialsGrid" class="grid"></div>
+        <div id="instaWrap" class="insta-grid"></div>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
+    <!-- CTA final -->
     <section class="final-cta">
       <div class="container final-inner">
         <h2>Reserva ya tu día especial 🎉</h2>
