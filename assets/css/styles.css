@@ -44,9 +44,10 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 /* HERO: más espacio superior para que el logo NO tape el texto */
 .hero{
   background:var(--cream);
-  padding-top: 240px;              /* << clave para que no se pise con el logo */
+  padding-top: 260px;   /* súbelo si hace falta (280/300) */
   padding-bottom: 18px;
-  position:relative; overflow:hidden
+  position:relative; 
+  overflow:hidden;
 }
 .subheadline{max-width:780px;margin: 0 auto}
 .hero-img{
