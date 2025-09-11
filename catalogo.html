@@ -16,37 +16,19 @@
     <div class="container header-inner" style="display:flex;align-items:center;justify-content:space-between;">
       <a href="/" class="btn btn-accent btn-small">← Volver</a>
       <strong>Catálogo de servicios</strong>
-      <a href="/" class="btn btn-primary btn-small">Inicio</a>
+      <a id="ctaHeader" href="#" class="btn btn-primary btn-small" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </header>
 
   <main>
     <section class="about" style="padding:28px 0">
       <div class="container">
-        <h2>Listado provisional</h2>
-        <p>Esta página provisional respeta el estilo actual. Sustituiremos estos ítems por el listado final con tarifas cuando nos lo pases.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Servicio 1</h3>
-            <p>Descripción breve del servicio 1.</p>
-          </article>
-          <article class="card">
-            <h3>Servicio 2</h3>
-            <p>Descripción breve del servicio 2.</p>
-          </article>
-          <article class="card">
-            <h3>Servicio 3</h3>
-            <p>Descripción breve del servicio 3.</p>
-          </article>
-          <article class="card">
-            <h3>Servicio 4</h3>
-            <p>Descripción breve del servicio 4.</p>
-          </article>
-          <article class="card">
-            <h3>Servicio 5</h3>
-            <p>Descripción breve del servicio 5.</p>
-          </article>
-        </div>
+        <!-- Estos dos se rellenan desde catalog.json -->
+        <h2 id="catTitle">Catálogo de servicios</h2>
+        <p id="catIntro"></p>
+
+        <!-- ¡Importante! Aquí NO va ningún <article> estático -->
+        <div id="catGrid" class="grid"></div>
       </div>
     </section>
   </main>
@@ -56,5 +38,8 @@
       <small>© 2025 Diversión Redonda · Sevilla</small>
     </div>
   </footer>
+
+  <!-- Rompemos caché con ?v=2 -->
+  <script src="/assets/js/catalog.js?v=2" defer></script>
 </body>
 </html>
