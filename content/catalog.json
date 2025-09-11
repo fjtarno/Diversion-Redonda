@@ -1,0 +1,10 @@
+{
+  "title": "Catálogo de servicios y tarifas",
+  "intro": "Listado provisional. Ajusta nombres, descripciones y precios cuando lo decidas.",
+  "items": [
+    { "name": "Servicio 1", "description": "Descripción breve del servicio 1.", "price": 80 },
+    { "name": "Servicio 2", "description": "Descripción breve del servicio 2.", "price": 120 },
+    { "name": "Servicio 3", "description": "Descripción breve del servicio 3.", "price": 150 },
+    { "name": "Servicio 4", "description": "Descripción breve del servicio 4.", "price": 200 }
+  ]
+}
