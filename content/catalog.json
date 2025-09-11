@@ -1,6 +1,6 @@
 {
-  "title": "Catálogo de servicios y tarifas",
-  "intro": "Listado provisional. Ajusta nombres, descripciones y precios cuando lo decidas.",
+  "title": "Catálogo 2025 — Diversión Redonda",
+  "intro": "Ajusta aquí nombres, descripciones y precios.",
   "items": [
     { "name": "ANIMACIÓN BÁSICA", "description": "Servicio de entretenimiento y juegos (1,5H)", "price": 60 },
     { "name": "ANIMACIÓN BÁSICA + DISFRAZ", "description": "Servicio de entretenimiento y juegos (1,5H)", "price": 70 },
