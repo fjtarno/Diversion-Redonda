@@ -2,9 +2,12 @@
   "title": "Catálogo de servicios y tarifas",
   "intro": "Listado provisional. Ajusta nombres, descripciones y precios cuando lo decidas.",
   "items": [
-    { "name": "Servicio 1", "description": "Descripción breve del servicio 1.", "price": 80 },
-    { "name": "Servicio 2", "description": "Descripción breve del servicio 2.", "price": 120 },
-    { "name": "Servicio 3", "description": "Descripción breve del servicio 3.", "price": 150 },
-    { "name": "Servicio 4", "description": "Descripción breve del servicio 4.", "price": 200 }
+    { "name": "ANIMACIÓN BÁSICA", "description": "Servicio de entretenimiento y juegos (1,5H)", "price": 60 },
+    { "name": "ANIMACIÓN BÁSICA + DISFRAZ", "description": "Servicio de entretenimiento y juegos (1,5H)", "price": 70 },
+    { "name": "ANIMACIÓN PIRATA + JUEGOS", "description": "Descripción breve del servicio 3.", "price": 90 },
+    { "name": "ANIMACIÓN PRINCESA + JUEGOS", "description": "Descripción breve del servicio 3.", "price": 90 }
+    { "name": "ANIMACIÓN MASTERCHEF + JUEGOS", "description": "Descripción breve del servicio 3.", "price": 90 }
+    { "name": "ANIMACIÓN TALLER DINOSAURIOS", "description": "Descripción breve del servicio 3.", "price": 90 } 
+    { "name": "ANIMACIÓN TALLER SLIME", "description": "Descripción breve del servicio 3.", "price": 90 }
   ]
 }
